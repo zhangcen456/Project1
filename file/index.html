@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="login-style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="index-js.js"></script>
+</head>
+<body>
+<section>
+    <header>
+        <h1>Art Store</h1>
+        <h2>where you find <span>genius</span> and <span>extraordinary</span></h2>
+        <nav>
+            <a href="index.html" id="indexlink">首页</a>
+            <a href="search-empty.html" id="searchlink">搜索</a>
+            <a href="detail.html" id="detaillink">详情</a>
+            <a onclick="showlogin()" id="header-login">登陆</a>
+            <a onclick="showsignin()" id="header-register">注册</a>
+        </nav>
+    </header>
+        <p>raphael</p>
+        <a href="#" id="learn">Learn More</a>
+    <img src="..\images\works\large\095010.jpg" id="img1" class="on" >
+    <img src="..\images\works\large\137020.jpg" id="img2" class="off">
+</section>
+<div id="outer">
+    <div>
+        <img src="..\images\works\square-medium\019050.jpg">
+        <h3>Pablo Picasso</h3>
+        <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso known as Pablo Ruiz Picasso was a Spanish painter, draughtsman, and sculptor who lived most of his life in France. He is widely known for co-founding the Cubist movement and for the wide variety of styles that he helped develop and explore. </p>
+        <a href="detail.html">view details</a>
+    </div>
+    <div>
+        <img src="..\images\works\square-medium\002070.jpg">
+        <h3>Pablo Picasso</h3>
+        <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso known as Pablo Ruiz Picasso was a Spanish painter, draughtsman, and sculptor who lived most of his life in France. He is widely known for co-founding the Cubist movement and for the wide variety of styles that he helped develop and explore. </p>
+        <a href="detail.html">view details</a>
+    </div>
+    <div>
+        <img src="..\images\works\square-medium\001140.jpg">
+        <h3>Pablo Picasso</h3>
+        <p>Pablo Diego José Francisco de Paula Juan Nepomuceno María de los Remedios Cipriano de la Santísima Trinidad Ruiz y Picasso known as Pablo Ruiz Picasso was a Spanish painter, draughtsman, and sculptor who lived most of his life in France. He is widely known for co-founding the Cubist movement and for the wide variety of styles that he helped develop and explore. </p>
+        <a href="detail.html">view details</a>
+    </div>
+</div>
+<div id="login-div">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-l">用户名：</label></td>
+                <td><input name="username-l" placeholder="键入您的用户名"></td>
+            </tr>
+            <tr>
+                <td><label for="password-l">密码：</label></td>
+                <td><input type="password" name="password-l"></td>
+            </tr>
+        </table>
+        <button type="button" name="login" id="login" onclick="loginbutton()">登陆</button>
+        <button type="button" name="cancel" id="cancel" onclick="cancelbutton()">取消</button>
+    </form>
+</div>
+<div id="sign">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-s">昵称：</label></td>
+                <td><input name="username-s" placeholder="昵称" onblur="checkname()"></td>
+                <td id="username-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password-s">密码：</label></td>
+                <td><input type="password" name="password-s" placeholder="密码" onblur="checkpassword()"></td>
+                <td id="password-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">确认密码：</label></td>
+                <td><input type="password" name="password2" placeholder="确认密码" onblur="checkpassword2()"></td>
+                <td id="password2-r"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">电话：</label></td>
+                <td><input name="phone" placeholder="电话" onblur="checkphone()"></td>
+                <td id="phone-r"></td>
+            </tr>
+        </table>
+        <button type="button" name="register" id="register" onclick="registerbutton()">注册</button>
+    </form>
+</div>
+<footer>
+    <p>Produced and maintained by RSnut at 2016.4.12</p>
+</footer>
+</body>
+</html>

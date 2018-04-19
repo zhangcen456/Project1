@@ -1,0 +1,33 @@
+body{min-width:1300px;position:relative;}
+main{padding:20px;}
+#side{
+    float:left;background-color:#E0FFFF;width:200px;
+    padding:20px;
+    border:solid;border-color:silver;border-width:1px;
+}
+#side button{
+    float:right;background-color:#66CDAA;border:solid;
+    border-color:gray;border-width:1px;
+    font-size:16px;padding:5px 10px;
+}
+#content{float:right;width:1000px;}
+#content div{
+    padding:20px;margin-bottom:20px;min-height:100px;
+    border:solid;border-color:silver;border-width:1px;
+}
+#content div table{border:solid;border-width:1px;}
+#content div table td{border:solid;border-width:1px;}
+.number{width:300px;}
+.name{width:200px;}
+.time{width:200px;}
+.price{width:200px;}
+#upload{background-color:#FFFFE0;overflow: auto;}
+#upload section{border:solid;border-width:1px;padding:5px;border-color:silver;overflow: auto;}
+#purchase{background-color:#F5DEB3;}
+#sale{background-color:#ADFF2F;}
+div div h2{font-size:16px;font-weight:normal;color:gray;margin-bottom:20px;}
+section img{float:left;width:150px;}
+#content .wrap{float:left;padding-left:20px;border:none;}
+.title{font-size:25px;font-family:Comic Sans MS,cursive;}
+.author{font-size:20px;font-style:italic;font-family:Comic Sans MS,cursive;}
+.upload-price{font-size:20px;}

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="detail-style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+<header>
+    <div id="h1">
+        <p>欢迎来到<span>Art Store</span></p>
+        <p id="headline"><a onclick="showlogin()">登录</a>或<a onclick="showsignin()">注册</a></p>
+        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#"><i class="fa fa-sign-out"></i> 登出</a></p>
+    </div>
+    <div id="h2">
+        <p>Art Store</p>
+        <form>
+            <input type="input" name="searchbox" placeholder="搜索">
+            <button name="search" type="button"><i class="fa fa-search" onclick="search()"></i></button>
+        </form>
+    </div>
+    <div id="h3">
+        <a href="index.html">首页</a>
+        <a href="search-empty.html">搜索</a>
+        <a href="detail.html">详情</a>
+    </div>
+</header>
+<main>
+    <section>
+        <h1>Self-portrait in a Straw Hat</h1>
+        <p onclick="author()" id="author">By Elisabeth Louise Vigée Le Brun</p>
+        <div class="small-box" id="smallBox">
+            <img src="..\images\works\large\113010.jpg">
+            <div class="tool" id="tool"></div>
+        </div>
+        <div class="big-box" id="bigBox">
+            <img src="..\images\works\large\113010.jpg" id="bigImg" />
+        </div>
+        <div id="inner2">
+            <p>The painting appears, after cleaning, to be an autograph replica of a picture, the original of which was painted in Brussels in 1782 in free imitation of Rubens's 'Chapeau de Paille', which Vigée Le Brun had seen in Antwerp.</p>
+            <p id="price">price:<span>100.0000</span></p>
+            <button name="wishlist" onclick="wishlist()"><i class="fa fa-star"></i> Add to Wish List</button>
+            <button name="shoppingcart" onclick="addin()"><i class="fa fa-shopping-cart"></i> Add to Shopping Cart</button>
+            <table>
+                <thead>
+                <th></th>
+                <th>Product Details</th>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Date:</td>
+                    <td>1782</td>
+                </tr>
+                <tr>
+                    <td>Medium:</td>
+                    <td>Oil on canvas</td>
+                </tr>
+                <tr>
+                    <td>Home:</td>
+                    <td>the National Gallery</td>
+                </tr>
+                <tr>
+                    <td>Dimensions:</td>
+                    <td>97.8 x 70.5 cm</td>
+                </tr>
+                <tr>
+                    <td>Heat:</td>
+                    <td>13</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <div id="side">
+        <table>
+            <thead>
+            <th>流行艺术家</th>
+            </thead>
+            <tbody>
+            <tr><td><a href="#">Cnasdio</a></td></tr>
+            <tr><td><a href="#">sdfgf</a></td></tr>
+            <tr><td><a href="#">wertyu</a></td></tr>
+            <tr><td><a href="#">vbnm</a></td></tr>
+            </tbody>
+        </table>
+        <table>
+            <thead>
+            <th>流行流派</th>
+            </thead>
+            <tbody>
+            <tr><td><a href="#">Classic</a></td></tr>
+            <tr><td><a href="#">Cubium</a></td></tr>
+            <tr><td><a href="#">Impression</a></td></tr>
+            <tr><td><a href="#">Banrosn</a></td></tr>
+            <tr><td><a href="#">nangsu</a></td></tr>
+            </tbody>
+        </table>
+    </div>
+</main>
+<div id="login-div">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-l">用户名：</label></td>
+                <td><input name="username-l" placeholder="键入您的用户名"></td>
+            </tr>
+            <tr>
+                <td><label for="password-l">密码：</label></td>
+                <td><input type="password" name="password-l"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput">验证码：</label></td>
+                <td><input type = "text" id = "codeinput"><input type="button" id="code" onclick="createCode()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="login" id="login" onclick="loginbutton()">登陆</button>
+        <button type="button" name="cancel" id="cancel" onclick="cancelbutton()">取消</button>
+    </form>
+</div>
+<div id="sign">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-s">昵称：</label></td>
+                <td><input name="username-s" placeholder="昵称" onblur="checkname()"></td>
+                <td id="username-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password-s">密码：</label></td>
+                <td><input type="password" name="password-s" placeholder="密码" onblur="checkpassword()"></td>
+                <td id="password-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">确认密码：</label></td>
+                <td><input type="password" name="password2" placeholder="确认密码" onblur="checkpassword2()"></td>
+                <td id="password2-r"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">电话：</label></td>
+                <td><input name="phone" placeholder="电话" onblur="checkphone()"></td>
+                <td id="phone-r"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput-s">验证码：</label></td>
+                <td><input type = "text" id = "codeinput-s"><input type="button" id="code-s" onclick="createCodes()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="register" id="register" onclick="registerbutton()">注册</button>
+    </form>
+</div>
+<script src="login-js.js"></script>
+<script src="detail-js.js"></script>
+</body>
+</html>

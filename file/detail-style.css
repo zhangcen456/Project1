@@ -1,0 +1,66 @@
+body{min-width:1300px;}
+main{position:relative;}
+main section{float:left;width:1000px;}
+#author:hover{cursor:pointer;}
+#side{float:right;width:250px;padding-right:20px;}
+#side table{width:250px;margin-top:30px;border:solid;border-collapse:collapse;border-width:2px;}
+#side table th{background-color:aqua;height:40px;}
+#side table td{border:solid;border-width:2px;height:30px;text-align:center;}
+#side a{text-decoration: none;color:black;}
+#side a:hover{color:blue;}
+section{padding:10px;}
+section h1{font-family:Comic Sans MS,cursive;}
+section div{float:left;}
+section p{font-style:italic;font-size:15px;}
+#inner1{width:400px;}
+#inner2{width:570px;padding-left:20px;}
+#inner2.inner2-hidden{display:none;}
+#inner2.inner2-visible{display:block;}
+#inner2 p{font-size:15px;font-style:normal;margin-bottom:10px;}
+#inner2 #price {font-family:Comic Sans MS,cursive;font-size:20px;}
+#inner2 #price span{color:orange;margin-left:5px;}
+#inner2 table{border:solid;border-color:gray;border-width:2px;border-collapse:collapse;margin-top:10px;width:450px;}
+#inner2 table th{background-color:silver;text-align:left;height:30px;}
+#inner2 table td{height:30px;border-bottom:solid;border-top:solid;border-width:2px;}
+#inner2 button{background-color:#63B8FF;border:solid;border-width:1px;font-size:15px;padding:6px;margin-bottom:10px;margin-right:5px;}
+#inner2 button:hover{background-color: #5CACEE;}
+.small-box {
+    width:400px;
+    border:1px #ccc solid;
+    cursor:move;
+    position:relative;
+}
+.small-box img {
+    width:400px;
+}
+.tool {
+    width:150px;
+    height:150px;
+    background-color:gold;
+    opacity:0.6;
+    filter:alpha(opacity=60);
+    position:absolute;
+    left:0px;
+    top:0px;
+    display:none;
+}
+.tool.active {
+    display:block;
+}
+.big-box {
+    width:300px;
+    height:300px;
+    border:1px #ccc solid;
+    overflow:hidden;
+    float:left;
+    margin-top:100px;
+    position:relative;
+    display:none;
+}
+.big-box.active {
+    display:block;
+}
+.big-box img {
+    width:800px;
+    position:absolute;
+}

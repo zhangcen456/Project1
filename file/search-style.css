@@ -1,0 +1,37 @@
+body{min-width:1300px;}
+.outer{clear:both;width:1250px;margin-left:auto;margin-right:auto;}
+div div{width:350px;;background-color: #FFFFE0;border:solid;border-width:1px;border-color:#EEDD82;}
+div div p{text-overflow: ellipsis;overflow: hidden; white-space:nowrap;}
+.inner{float:left;margin:20px;padding:10px;height:250px;}
+img{float:left;}
+.wrap{width:auto;border:none;}
+.title{padding:10px;font-size:25px;font-family:Comic Sans MS,cursive;}
+.author{padding-left:10px;font-size:20px;font-style:italic;font-family:Comic Sans MS,cursive;}
+.description{clear:both;padding-top:20px;padding-bottom:10px;}
+div div a{
+    float:left;color:black;padding:5px 10px;background-color:#00BFFF;
+    text-decoration:none;
+}
+div div a:hover{background-color: #E0FFFF;}
+div div .heat{float:left;margin-left:50px;padding:5px 10px;background-color:#00BFFF;}
+div div img{width:150px;}
+main{padding:30px;}
+#search{font-size:30px;margin-bottom:10px;width:1300px;margin-left:auto;margin-right:auto;}
+main form{float:right;}
+#empty{font-size:30px;text-align: center;clear:both;margin-top: 100px;height:400px;}
+#page{clear:both;text-align:center;color:#00BFFF;}
+#page ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#page ul li {
+    display:inline;
+    border:solid;
+    padding:10px 15px;
+}
+#page ul li:hover{
+    color:white;
+    background-color:#00BFFF;
+    cursor:pointer;
+}

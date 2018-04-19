@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="search-style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login-style.css">
+</head>
+<body>
+<header>
+    <div id="h1">
+        <p>欢迎来到<span>Art Store</span></p>
+        <p id="headline"><a onclick="showlogin()">登录</a>或<a onclick="showsignin()">注册</a></p>
+        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#"><i class="fa fa-sign-out"></i> 登出</a></p>
+    </div>
+    <div id="h2">
+        <p>Art Store</p>
+        <form>
+            <input type="input" name="searchbox" placeholder="搜索">
+            <button name="search" type="button"><i class="fa fa-search" onclick="search()"></i></button>
+        </form>
+    </div>
+    <div id="h3">
+        <a href="index.html">首页</a>
+        <a href="search-empty.html">搜索</a>
+        <a href="detail.html">详情</a>
+    </div>
+</header>
+<main>
+    <p id="search">搜索结果:</p>
+    <form>
+        <label>
+            排序方式
+            价格：<input type="radio" value="paixu1" name="paixu">
+            热度：<input type="radio" value="paixu2" name="paixu">
+            标题：<input type="radio" value="paixu3" name="paixu">
+        </label>
+    </form>
+
+    <div class="outer">
+        <div class="inner">
+            <img src="..\images\works\square-medium\100010.jpg">
+            <div class="wrap">
+            <p class="title">A Man with a Quilted Sleeve</p>
+            <p class="author">Titian</p>
+            </div>
+            <p class="description">This portrait was eloquently described by Giorgio Vasari in his 1568 biography of Titian. He identified the man as a member of the Barbarigo, an aristocratic Venetian family. The most likely candidate is Gerolamo, who was 30 years old in 1509. He had numerous political and literary contacts and would have helped the young Titian on his path to success.', 'This portrait was eloquently described by Giorgio Vasari in his 1568 biography of Titian. He identified the man as a member of the Barbarigo, an aristocratic Venetian family. The most likely candidate is Gerolamo, who was 30 years old in 1509. He had numerous political and literary contacts and would have helped the young Titian on his path to success.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+            <img src="..\images\works\square-medium\135040.jpg">
+            <div class="wrap">
+            <p class="title">Young Woman at Her Toilette</p>
+            <p class="author">Giovanni Bellini</p>
+            </div>
+            <p class="description">The nude figure is integrated into a system of horizontal and vertical features. She is sitting on a bench that has been covered with a precious carpet, and behind her is a dark-green surface on which a mirror has been hung. On the left a view of a Venetian landscape gives the painting depth. By using the same colours in the principal motif and landscape, Bellini connects the two spheres, and the basic mood of the painting is gentle and unified. In her right hand the young woman is holding another mirror, which is a symbol of vanitas on the one hand and an attribute of Venus Pudica on the other. Using the device of two mirrors, Bellini enables the observer to see two views of the woman’s head from a single vantage point, a perspective possible only in painting.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+            <img src="..\images\works\square-medium\115010.jpg">
+            <div class="wrap">
+            <p class="title">Arnolfini Portrait</p>
+            <p class="author">Jan Van Eyck</p>
+            </div>
+            <p class="description"><em>The Arnolfini Portrait</em> is an oil painting on oak panel dated 1434 by the Early Netherlandish painter Jan van Eyck. The painting is a small full-length double portrait, which is believed to represent the Italian merchant Giovanni di Nicolao Arnolfini and possibly his wife, presumably in their home in the Flemish city of Bruges. It is considered one of the more original and complex paintings in Western art because of the iconography, the unusual geometric orthogonal perspective, the use of the mirror to reflect the space, and that the portrait is considered unique by some art historians as the record of a marriage contract in the form of a painting.', '<em>The Arnolfini Portrait</em> is an oil painting on oak panel dated 1434 by the Early Netherlandish painter Jan van Eyck. It is also known as The Arnolfini Wedding, The Arnolfini Marriage, The Arnolfini Double Portrait or the Portrait of Giovanni Arnolfini and his Wife, among other titles.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+    </div>
+    <div class="outer">
+        <div class="inner">
+            <img src="..\images\works\square-medium\109010.jpg">
+            <div class="wrap">
+            <p class="title">Age of Innocence</p>
+            <p class="author">Sir Joshua Reynolds</p>
+            </div>
+            <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+            <img src="..\images\works\square-medium\109010.jpg">
+            <div class="wrap">
+            <p class="title">Age of Innocence</p>
+            <p class="author">Sir Joshua Reynolds</p>
+            </div>
+            <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+            <img src="..\images\works\square-medium\109010.jpg">
+            <div class="wrap">
+            <p class="title">Age of Innocence</p>
+            <p class="author">Sir Joshua Reynolds</p>
+            </div>
+            <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+    </div>
+    <div class="outer">
+        <div class="inner">
+            <img src="..\images\works\square-medium\109010.jpg">
+            <div class="wrap">
+            <p class="title">Age of Innocence</p>
+            <p class="author">Sir Joshua Reynolds</p>
+            </div>
+            <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+        <img src="..\images\works\square-medium\109010.jpg">
+        <div class="wrap">
+        <p class="title">Age of Innocence</p>
+        <p class="author">Sir Joshua Reynolds</p>
+        </div>
+        <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+        <a href="#">查看</a>
+        <p class="heat">热度 0</p>
+        </div>
+        <div class="inner">
+            <img src="..\images\works\square-medium\109010.jpg">
+            <div class="wrap">
+            <p class="title">Age of Innocence</p>
+            <p class="author">Sir Joshua Reynolds</p>
+            </div>
+            <p class="description"><em>The Age of Innocence</em> is an oil on canvas picture by Sir Joshua Reynolds, painted in either 1785 or 1788 and measuring 765 x 638 mm. The sitter is unknown, but was possibly Reynolds\'s great-niece Theophila Gwatkin (who was three in 1785), or Lady Anne Spencer (1773–1865), the youngest daughter of the 4th Duke of Marlborough. The picture is a character study, or, in 18th-century terms, a fancy picture, and was painted over another Reynolds work, A Strawberry Girl, perhaps because Strawberry had suffered some paint losses. Only the hands remain in their original state. Innocence itself has deteriorated since 1859. The picture was presented to the National Gallery in 1847 by Robert Vernon, and has hung in the Tate since 1951. The picture became a favourite with the public, and was copied hundreds of times.</p>
+            <a href="#">查看</a>
+            <p class="heat">热度 0</p>
+        </div>
+    </div>
+    <div id="page">
+        <ul>
+            <li>&lt</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>&gt</li>
+        </ul>
+    </div>
+</main>
+<div id="login-div">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-l">用户名：</label></td>
+                <td><input name="username-l" placeholder="键入您的用户名"></td>
+            </tr>
+            <tr>
+                <td><label for="password-l">密码：</label></td>
+                <td><input type="password" name="password-l"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput">验证码：</label></td>
+                <td><input type = "text" id = "codeinput"><input type="button" id="code" onclick="createCode()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="login" id="login" onclick="loginbutton()">登陆</button>
+        <button type="button" name="cancel" id="cancel" onclick="cancelbutton()">取消</button>
+    </form>
+</div>
+<div id="sign">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-s">昵称：</label></td>
+                <td><input name="username-s" placeholder="昵称" onblur="checkname()"></td>
+                <td id="username-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password-s">密码：</label></td>
+                <td><input type="password" name="password-s" placeholder="密码" onblur="checkpassword()"></td>
+                <td id="password-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">确认密码：</label></td>
+                <td><input type="password" name="password2" placeholder="确认密码" onblur="checkpassword2()"></td>
+                <td id="password2-r"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">电话：</label></td>
+                <td><input name="phone" placeholder="电话" onblur="checkphone()"></td>
+                <td id="phone-r"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput-s">验证码：</label></td>
+                <td><input type = "text" id = "codeinput-s"><input type="button" id="code-s" onclick="createCodes()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="register" id="register" onclick="registerbutton()">注册</button>
+    </form>
+</div>
+<script src="login-js.js"></script>
+</body>
+</html>

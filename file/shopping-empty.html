@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="header-style.css">
+    <link rel="stylesheet" href="shopping-style.css">
+    <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+    <div id="h1">
+        <p>欢迎来到<span>Art Store</span></p>
+        <p id="headline"><a onclick="showlogin()">登录</a>或<a onclick="showsignin()">注册</a></p>
+        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#"><i class="fa fa-sign-out"></i> 登出</a></p>
+    </div>
+    <div id="h2">
+        <p>Art Store</p>
+        <form>
+            <input type="input" name="searchbox" placeholder="搜索">
+            <button name="search" type="button"><i class="fa fa-search" onclick="search()"></i></button>
+        </form>
+    </div>
+    <div id="h3">
+        <a href="index.html">首页</a>
+        <a href="search-empty.html">搜索</a>
+        <a href="detail.html">详情</a>
+    </div>
+</header>
+<main>
+    <p id="shopping">购物车</p>
+    <div class="outer">
+        <p id="empty">购物车为空</p>
+        <div id="cash">
+            <button type="button" name="cash">结款：$0</button>
+        </div>
+    </div>
+</main>
+<script src="login-js.js"></script>
+</body>
+</html>
