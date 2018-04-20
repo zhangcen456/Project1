@@ -14,7 +14,7 @@ function loginbutton() {
     if(username===""){
         alert("用户名为空");
     }
-    else if(username!=="username"){
+    else if(username!=="user123"){
         alert("用户名不存在");
     }
     else if(password===""){
@@ -32,6 +32,7 @@ function loginbutton() {
         createCode();//刷新验证码
         document.getElementById("codeinput").value = "";//清空文本框
     }else {
+        alert("登陆成功");
         document.getElementById("login-div").style.visibility="hidden";
         if(document.getElementById("headline-in")){
             document.getElementById("headline-in").style.visibility="hidden";
@@ -40,6 +41,7 @@ function loginbutton() {
             document.getElementById("headline").style.visibility="hidden";
         }
         document.getElementById("username-h").innerHTML="<i class='fa fa-user'></i> user123";
+        document.getElementById("logout-h").onclick=logout;
     }
 }
 
@@ -94,7 +96,7 @@ function checkpassword() {
         document.getElementById("password-r").style.fontSize="10px";
         return false;
     }
-    else if(username.length<6){
+    else if(password.length<6){
         document.getElementById("password-r").innerHTML="密码长度不足";
         document.getElementById("password-r").style.color="red";
         document.getElementById("password-r").style.fontSize="10px";
@@ -170,7 +172,7 @@ function registerbutton() {
             if(inputCode.length <= 0) { //若输入的验证码长度为0
                 alert("请输入验证码！"); //则弹出请输入验证码
                 createCodes();
-            }else if(inputCode != code ) { //若输入的验证码与产生的验证码不一致时
+            }else if(inputCode != codes ) { //若输入的验证码与产生的验证码不一致时
                 alert("验证码输入错误！"); //则弹出验证码输入错误
                 createCodes();//刷新验证码
                 document.getElementById("codeinput-s").value = "";//清空文本框

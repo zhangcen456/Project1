@@ -23,7 +23,7 @@ section p{font-style:italic;font-size:15px;}
 #inner2 table th{background-color:silver;text-align:left;height:30px;}
 #inner2 table td{height:30px;border-bottom:solid;border-top:solid;border-width:2px;}
 #inner2 button{background-color:#63B8FF;border:solid;border-width:1px;font-size:15px;padding:6px;margin-bottom:10px;margin-right:5px;}
-#inner2 button:hover{background-color: #5CACEE;}
+#inner2 button:hover{background-color: #5CACEE;cursor: pointer;}
 .small-box {
     width:400px;
     border:1px #ccc solid;

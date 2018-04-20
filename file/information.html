@@ -13,7 +13,7 @@
     <div id="h1">
         <p>欢迎来到<span>Art Store</span></p>
         <p id="headline"><a onclick="showlogin()">登录</a>或<a onclick="showsignin()">注册</a></p>
-        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#"><i class="fa fa-sign-out"></i> 登出</a></p>
+        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#" id="logout-h"><i class="fa fa-sign-out"></i> 登出</a></p>
     </div>
     <div id="h2">
         <p>Art Store</p>
@@ -26,6 +26,7 @@
         <a href="index.html">首页</a>
         <a href="search-empty.html">搜索</a>
         <a href="detail.html">详情</a>
+        <a href="#">发布艺术品</a>
     </div>
 </header>
 <main>
@@ -37,22 +38,22 @@
             </tr>
             <tr>
                 <td>电话：</td>
-                <td></td>
+                <td>021-11111111</td>
             </tr>
             <tr>
                 <td>邮箱：</td>
-                <td></td>
+                <td>user123@xx.com</td>
             </tr>
             <tr>
                 <td>地址：</td>
-                <td></td>
+                <td>xx市xx路xx号xx室</td>
             </tr>
             <tr>
                 <td>余额：</td>
-                <td></td>
+                <td><span id="remain">1000</span></td>
             </tr>
         </table>
-        <button type="button" name="pay">充值</button>
+        <button type="button" name="pay" onclick="incharge()">充值</button>
     </div>
     <div id="content">
         <div id="upload">
@@ -154,5 +155,6 @@
     </form>
 </div>
 <script src="login-js.js"></script>
+<script src="information-js.js"></script>
 </body>
 </html>

@@ -13,7 +13,7 @@
     <div id="h1">
         <p>欢迎来到<span>Art Store</span></p>
         <p id="headline"><a onclick="showlogin()">登录</a>或<a onclick="showsignin()">注册</a></p>
-        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#"><i class="fa fa-sign-out"></i> 登出</a></p>
+        <p class="right"><a href="information.html" id="username-h"><i class="fa fa-user"></i> 未登录</a><a href="shopping.html" id="shopping-h"><i class="fa fa-shopping-cart"></i> 购物车</a><a href="#" id="logout-h"><i class="fa fa-sign-out"></i> 登出</a></p>
     </div>
     <div id="h2">
         <p>Art Store</p>
@@ -26,13 +26,14 @@
         <a href="index.html">首页</a>
         <a href="search-empty.html">搜索</a>
         <a href="detail.html">详情</a>
+        <a href="#">发布艺术品</a>
     </div>
 </header>
 <main>
     <p id="shopping">购物车</p>
     <div class="outer">
         <section id="item1">
-            <img src="..\images\works\square-medium\100010.jpg">
+            <a href="detail.html"><img src="..\images\works\square-medium\100010.jpg"></a>
             <div class="wrap">
                 <p class="title">A Man with a Quilted Sleeve</p>
                 <p class="author">Titian</p>
@@ -42,7 +43,7 @@
             </div>
         </section>
         <section id="item2">
-            <img src="..\images\works\square-medium\135040.jpg">
+            <a href="detail.html"><img src="..\images\works\square-medium\135040.jpg"></a>
             <div class="wrap">
                 <p class="title">Young Woman at Her Toilette</p>
                 <p class="author">Giovanni Bellini</p>
@@ -51,8 +52,15 @@
                 <button type="button" name="delete" onclick="deleteitem2()">删除</button>
             </div>
         </section>
+        <div id="page">
+            <ul>
+                <li>&lt</li>
+                <li>1</li>
+                <li>&gt</li>
+            </ul>
+        </div>
         <div id="cash">
-            <button type="button" name="cash" id="cashbutton">结款：$240</button>
+            <button type="button" name="cash" id="cashbutton" onclick="alert('结款成功');">结款：$240</button>
         </div>
     </div>
 </main>
