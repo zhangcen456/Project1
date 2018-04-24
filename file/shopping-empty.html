@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="header-style.css">
     <link rel="stylesheet" href="shopping-style.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login-style.css">
 </head>
 <body>
 <header>
@@ -31,11 +32,71 @@
     <p id="shopping">购物车</p>
     <div class="outer">
         <p id="empty">购物车为空</p>
+        <div id="page">
+            <ul>
+                <li>&lt</li>
+                <li>1</li>
+                <li>&gt</li>
+            </ul>
+        </div>
         <div id="cash">
-            <button type="button" name="cash">结款：$0</button>
+            <button type="button" name="cash" id="cashbutton" onclick="alert('购物车内无商品')">结款：$0</button>
         </div>
     </div>
 </main>
+<div id="login-div">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-l">用户名：</label></td>
+                <td><input name="username-l" placeholder="键入您的用户名"></td>
+            </tr>
+            <tr>
+                <td><label for="password-l">密码：</label></td>
+                <td><input type="password" name="password-l"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput">验证码：</label></td>
+                <td><input type = "text" id = "codeinput"><input type="button" id="code" onclick="createCode()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="login" id="login" onclick="loginbutton()">登陆</button>
+        <button type="button" name="cancel" id="cancel" onclick="cancelbutton()">取消</button>
+    </form>
+</div>
+<div id="sign">
+    <form>
+        <table>
+            <tr>
+                <td><label for="username-s">昵称：</label></td>
+                <td><input name="username-s" placeholder="昵称" onblur="checkname()"></td>
+                <td id="username-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password-s">密码：</label></td>
+                <td><input type="password" name="password-s" placeholder="密码" onblur="checkpassword()"></td>
+                <td id="password-r"></td>
+            </tr>
+            <tr>
+                <td><label for="password2">确认密码：</label></td>
+                <td><input type="password" name="password2" placeholder="确认密码" onblur="checkpassword2()"></td>
+                <td id="password2-r"></td>
+            </tr>
+            <tr>
+                <td><label for="phone">电话：</label></td>
+                <td><input name="phone" placeholder="电话" onblur="checkphone()"></td>
+                <td id="phone-r"></td>
+            </tr>
+            <tr>
+                <td><label for="codeinput-s">验证码：</label></td>
+                <td><input type = "text" id = "codeinput-s"><input type="button" id="code-s" onclick="createCodes()" title='点击更换验证码'></td>
+            </tr>
+        </table>
+        <button type="button" name="register" id="register" onclick="registerbutton()">注册</button>
+    </form>
+</div>
+<div id="background">
+</div>
 <script src="login-js.js"></script>
 </body>
 </html>

@@ -42,3 +42,4 @@ img{float:left;width:150px;}
     cursor:pointer;
     border-color:#00BFFF;
 }
+#cashbutton:hover{cursor:pointer;}

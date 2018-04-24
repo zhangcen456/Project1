@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="index-style.css">
     <link rel="stylesheet" href="login-style.css">
     <link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="index-js.js"></script>
 </head>
 <body>
 <section>
@@ -60,6 +59,10 @@
                 <td><label for="password-l">密码：</label></td>
                 <td><input type="password" name="password-l"></td>
             </tr>
+            <tr>
+                <td><label for="codeinput">验证码：</label></td>
+                <td><input type = "text" id = "codeinput"><input type="button" id="code" onclick="createCode()" title='点击更换验证码'></td>
+            </tr>
         </table>
         <button type="button" name="login" id="login" onclick="loginbutton()">登陆</button>
         <button type="button" name="cancel" id="cancel" onclick="cancelbutton()">取消</button>
@@ -88,12 +91,19 @@
                 <td><input name="phone" placeholder="电话" onblur="checkphone()"></td>
                 <td id="phone-r"></td>
             </tr>
+            <tr>
+                <td><label for="codeinput-s">验证码：</label></td>
+                <td><input type = "text" id = "codeinput-s"><input type="button" id="code-s" onclick="createCodes()" title='点击更换验证码'></td>
+            </tr>
         </table>
         <button type="button" name="register" id="register" onclick="registerbutton()">注册</button>
     </form>
 </div>
+<div id="background">
+</div>
 <footer>
     <p>Produced and maintained by RSnut at 2016.4.12</p>
 </footer>
+<script src="index-js.js"></script>
 </body>
 </html>

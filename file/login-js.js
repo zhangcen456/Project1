@@ -2,10 +2,12 @@ function showlogin() {
     document.getElementsByName("username-l")[0].value="";
     document.getElementsByName("password-l")[0].value="";
     document.getElementById("login-div").style.visibility="visible";
+    document.getElementById("background").style.visibility="visible";
 }
 
 function showsignin() {
     document.getElementById("sign").style.visibility="visible";
+    document.getElementById("background").style.visibility="visible";
 }
 function loginbutton() {
     var username=document.getElementsByName("username-l")[0].value;
@@ -34,6 +36,7 @@ function loginbutton() {
     }else {
         alert("登陆成功");
         document.getElementById("login-div").style.visibility="hidden";
+        document.getElementById("background").style.visibility="hidden";
         if(document.getElementById("headline-in")){
             document.getElementById("headline-in").style.visibility="hidden";
         }
@@ -141,7 +144,7 @@ function checkpassword2() {
 
 function checkphone() {
     var phone=document.getElementsByName("phone")[0].value;
-    var r=/[0-9]{3}-[0-9]{8}/;
+    var r=/^[0-9]{3}-[0-9]{8}$/;
     if(phone===""){
         document.getElementById("phone-r").innerHTML="电话为空";
         document.getElementById("phone-r").style.color="red";
@@ -164,6 +167,7 @@ function checkphone() {
 
 function cancelbutton() {
     document.getElementById("login-div").style.visibility="hidden";
+    document.getElementById("background").style.visibility="hidden";
 }
 
 function registerbutton() {
@@ -182,6 +186,7 @@ function registerbutton() {
             else{
                 alert("注册成功");
                 document.getElementById("sign").style.visibility="hidden";
+                document.getElementById("background").style.visibility="hidden";
             }
         }
     // if(checkphone()&&checkpassword2()&&checkpassword()&&checkname()){

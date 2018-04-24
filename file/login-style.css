@@ -1,22 +1,26 @@
 #login-div{
-    background-color: #F5F5F5;position:absolute;top:250px;left:450px;
-    height:300px;width:450px;visibility:hidden;
+    background-color: #F5F5F5;position:fixed;top:250px;left:550px;
+    height:300px;width:450px;visibility:hidden;z-index:30;
 }
 #login-div table{border:none;margin:auto;margin-top:70px;}
 #login-div table tr{height:40px;}
 #login-div table td{width:100px;}
 #login-div #login{margin-left:60%;margin-top:20px;background-color:#6495ED;border:none;padding:2px 20px;}
+#login-div #login:hover{cursor:pointer;}
 #login-div #cancel{background-color:silver;border:none;padding:2px 20px;margin-left:5px;}
+#login-div #cancel:hover{cursor:pointer;}
 #login-div #codeinput{width:50px;vertical-align: bottom;}
 #login-div #code{width:50px;vertical-align: bottom;margin-left:20px;}
 
 #sign{
-    background-color: #F5F5F5;position:absolute;top:250px;left:450px;
-    height:300px;width:450px;visibility:hidden;
+    background-color: #F5F5F5;position:fixed;top:250px;left:550px;
+    height:300px;width:450px;visibility:hidden;z-index:30;
 }
 #sign table{border:none;margin:auto;margin-top:50px;}
 #sign table tr{height:40px;}
 #sign table td{width:100px;}
 #sign #register{background-color:silver;border:none;padding:2px 20px;margin-left:70%;margin-top:10px;}
+#sign #register:hover{cursor:pointer;}
 #sign #codeinput-s{width:50px;vertical-align: bottom;}
 #sign #code-s{width:50px;vertical-align: bottom;margin-left:20px;}
+#background{background-color:rgba(0,0,0,0.5);position:fixed;left:0;right:0;top:0;bottom:0;visibility: hidden;z-index:20; }
